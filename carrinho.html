@@ -25,7 +25,6 @@
     <link href="css/custom.css" rel="stylesheet">
 
     <script src="js/respond.min.js"></script>
-    <script src="js/custom.js"></script>
 
     <link rel="shortcut icon" href="favicon.png">
 
@@ -62,7 +61,7 @@
 
                 <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
                     <img src="img/logo.png" class="hidden-xs">
-                    <img src="img/logo-small.png" class="visible-xs"><span class="sr-only"> Entre Lembranças</span>
+                    <img src="img/logo-small1.png" class="visible-xs"><span class="sr-only"> Entre Lembranças</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
@@ -276,28 +275,28 @@
             </div>
             <!--/.nav-collapse -->
 
+
             <div class="navbar-buttons">
 
                 <div class="navbar-collapse collapse" id="querodoar">
-                    <a href="quero_doar.html" class="btn btn-primary navbar-btn active">QUERO BABYCOINS<span class="hidden-sm"></span></a>
+                    <a href="quero_doar.html" class="btn btn-primary navbar-btn">QUERO BABYCOINS<span class="hidden-sm"></span></a>
+                </div>
+
+
+                <div class="navbar-collapse collapse right" id="babycoins-available">
+                    <a href="ja_doei.html" class="btn btn-primary navbar-btn">B$ 120,00<span class="hidden-sm"></span></a>
                 </div>
 
                 <div class="navbar-collapse collapse right" id="basket-overview">
                     <a href="#" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm"></span></a>
-                </div>
-                <!--/.nav-collapse -->
+
 
                 <div class="navbar-collapse collapse right" id="search-not-mobile">
                     <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
                         <i class="fa fa-search"></i>
                     </button>
                 </div>
-
-                <div class="navbar-collapse collapse right" id="moneyavailable">
-                    <a href="ja_doei.html" class="btn btn-primary navbar-btn"><i class="fa fa-money"> B$120,00</i><span class="hidden-sm"></span></a>
                 </div>
-
-            </div>
 
             <div class="collapse clearfix" id="search">
 
@@ -318,51 +317,103 @@
         </div>
         <!-- /.container -->
     </div>
+        </div>
     <!-- /#navbar -->
 
     <!-- *** NAVBAR END *** -->
 
 
-
-    <div id="all">
-
-        <div id="content">
-
-            <div class="container">
-                <div id="trocas">
-                    <div class="row" id="trocastitle">
-                        <div class="col-md-12">
-                            <h2>Trocas <span><a href="#" class="btn btn-primary btn-xs" onclick="addTrocas()">+</a></span></h2>
-                        </div>
-                    </div>
-                    <div class="row form">
-                        <form>
-                            <div class="form-group">
-                                <label for="inputType" class="col-md-1 control-label">Tipo</label>
-                                <div class="col-md-3">
-                                    <select class="form-control" id="sel1">
-                                        <option>Roupa</option>
-                                        <option>Brinquedo</option>
-                                    </select>
-                                </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th class="text-center">Pre&ccedil;o</th>
+                        <th class="text-center">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sm-8 col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img src="img/product5.jpg" alt="" class="img-responsive" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Casaco de L&atilde; Bege Feminino</a></h4>
+                                <h5 class="media-heading"> por <a href="#">Lilica Ripilica</a></h5>
                             </div>
-                            <div class="form-group">
-                                <label for="inputType" class="col-md-1 control-label">Quantidade</label>
-                                <div class="col-md-3">
-                                    <input type="text" class="form-control" id="quantidadeDoacao" placeholder="Quantidade">
-                                </div>
+                        </div></td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="1">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>R$20.00</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>R$20.00</strong></td>
+                        <td class="col-sm-1 col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            Remover
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img src="img/product4.jpg" alt="" class="img-responsive" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Touca Listrada Unisessex</a></h4>
+                                <h5 class="media-heading"> por <a href="#">Brandili</a></h5>
                             </div>
-                            
-                        </form>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 button-confirma-wrapper">
-                    	<a href="ja_doei.html"><button onClick="confirmaTroca()" type="button" class="btn btn-primary">Confirmar</button></a>
-                    </div>
-                </div>
-            </div>
+                        </div></td>
+                        <td class="col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="1">
+                        </td>
+                        <td class="col-md-1 text-center"><strong>R$13.00</strong></td>
+                        <td class="col-md-1 text-center"><strong>R$13.00</strong></td>
+                        <td class="col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            Remover
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><h5>Subtotal</h5></td>
+                        <td class="text-right"><h5><strong>R$33.00</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><h5>Frete</h5></td>
+                        <td class="text-right"><h5><strong>R$5.00</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><h3>Total</h3></td>
+                        <td class="text-right"><h3><strong>R$38.00</strong></h3></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                        <button type="button" class="btn btn-default">Continuar comprando
+                        </button></td>
+                        <td>
+                        <button type="button" class="btn btn-success">
+                            Checkout
+                        </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
+  
         </div>
         <!-- /#content -->
 
@@ -458,7 +509,6 @@
 
 
 
-    </div>
     <!-- /#all -->
 
 
